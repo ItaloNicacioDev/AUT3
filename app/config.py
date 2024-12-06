@@ -9,11 +9,5 @@ CONFIG = {
     
     # Colunas são identificadas pelas categorias diretamente colocar essa linha caso o certificado saia errado 
     # caso contrario mantenha "#" para ignorar
-    "colunas": [
-        #"Faixa de calibração",    # Nome da primeira coluna
-        #"Instrumento",            # Nome da segunda coluna
-        #"Padrão",                 # Nome da terceira coluna
-        #"Erro",                   # Nome da quarta coluna
-        #"Incerteza de Medição"   # Nome da quinta coluna
-    ]
+    
 }
