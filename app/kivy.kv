@@ -1,0 +1,72 @@
+BoxLayout:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 15
+    canvas.before:
+        Color:
+            rgba: 1, 0.647, 0, 1  # Cor laranja (RGBA)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    # Botão para selecionar PDF
+    Button:
+        text: "Selecionar PDF"
+        size_hint: (1, None)
+        height: 60
+        on_press: app.selecionar_pdf()
+        background_normal: ''
+        background_color: 1, 0.6, 0, 1  # Laranja claro
+        font_size: 16
+        color: 1, 1, 1, 1  # Cor do texto branca
+        bold: True
+        pos_hint: {"center_x": 0.5}
+        canvas.before:
+            RoundedRectangle:
+                pos: self.pos
+                size: self.size
+                radius: [15]
+
+    # Barra de progresso
+    ProgressBar:
+        id: progress_bar
+        max: 100
+        value: 0
+        size_hint: (1, None)
+        height: 30
+        color: 1, 0.647, 0, 1  # Cor laranja da barra
+        background_color: 0.8, 0.8, 0.8, 1  # Cor de fundo da barra
+        canvas.before:
+            RoundedRectangle:
+                pos: self.pos
+                size: self.size
+                radius: [15]
+
+    # Rótulo de progresso
+    Label:
+        id: progress_label
+        text: "0% Concluído"
+        size_hint: (1, None)
+        height: 50
+        font_size: 18
+        color: 1, 1, 1, 1  # Cor do texto branca
+        bold: True
+        halign: 'center'
+
+    # Botão para confirmar dados
+    Button:
+        text: "Confirmar Dados"
+        size_hint: (1, None)
+        height: 60
+        on_press: app.confirmar_dados()
+        background_normal: ''
+        background_color: 0.8, 0.5, 0, 1  # Laranja mais forte
+        font_size: 16
+        color: 1, 1, 1, 1  # Cor do texto branca
+        bold: True
+        pos_hint: {"center_x": 0.5}
+        canvas.before:
+            RoundedRectangle:
+                pos: self.pos
+                size: self.size
+                radius: [15]
