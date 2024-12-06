@@ -45,19 +45,15 @@ def processar_excel(dados, molde_path, progress_bar, progress_label, app):
         wb = openpyxl.load_workbook(molde_path)
         sheet = wb.active
 
-        # Desmesclar todas as células mescladas antes de escrever
-        for merged_range in list(sheet.merged_cells.ranges):
-            sheet.unmerge_cells(str(merged_range))
-
         # Preencher dados a partir da linha 62 e coluna D (linha 62, coluna 4)
         linha_inicio = 62
         coluna_inicio = 4
 
-        # Preencher os dados
+        # Preencher os dados sem alterar a formatação das células existentes
         for row_index, linha in enumerate(dados, start=linha_inicio):
             for col_index, valor in enumerate(linha, start=coluna_inicio):
                 cell = sheet.cell(row=row_index, column=col_index)
-                # Atribuir valor à célula
+                # Atribuir valor à célula, sem modificar a formatação
                 cell.value = valor
 
         # Salvar o arquivo Excel
