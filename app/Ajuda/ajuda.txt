@@ -1,0 +1,53 @@
+Passo 1: Escolher um Arquivo PDF para Extração
+Selecione o arquivo PDF que contém os dados que você deseja extrair.
+
+Clique no botão "Escolher PDF".
+
+Isso abrirá uma janela de navegação onde você pode selecionar o arquivo PDF que deseja usar.
+Após selecionar o arquivo, clique em "Abrir".
+Nota: Certifique-se de que o PDF está no formato correto e contém os dados estruturados de forma legível, para garantir uma boa extração.
+
+Passo 2: Confirmar a Extração do Texto
+Após selecionar o arquivo PDF, clique no botão "Confirmar Extração".
+O aplicativo começará a processar o PDF e extrairá o texto contido nele.
+O texto extraído será exibido na área de texto na parte inferior da janela do aplicativo.
+Dica: Se o PDF contiver tabelas ou informações com estrutura, elas aparecerão como texto no campo de texto.
+Passo 3: Escolher o Molde Excel
+Agora você precisará escolher um molde Excel onde os dados extraídos serão organizados e inseridos.
+
+Clique no botão "Escolher Molde Excel".
+
+Uma janela de navegação será aberta.
+Escolha o arquivo Excel que contém a estrutura onde os dados serão inseridos.
+Após selecionar o arquivo, clique em "Abrir".
+Nota: O molde Excel precisa ter as células pré-definidas de acordo com a estrutura dos dados que serão extraídos. Se o arquivo de molde não estiver no formato adequado, o processo de inserção pode não ser bem-sucedido.
+
+Passo 4: Verificar os Dados Extraídos
+Após a extração do texto, você pode visualizar os dados extraídos na área de texto.
+Se necessário, edite os dados manualmente na área de texto, para garantir que estejam corretos e formatados corretamente para o Excel.
+Se os dados extraídos estiverem no formato de tabela (com várias colunas e linhas), isso facilitará a inserção no molde Excel.
+
+Passo 5: Inserir os Dados no Molde Excel
+Depois de confirmar que os dados extraídos estão corretos, clique no botão "Inserir no Molde Excel".
+O aplicativo irá começar a transferir os dados extraídos para o arquivo Excel, a partir da linha 62, coluna 4 (padrão).
+Durante esse processo, uma barra de progresso será exibida para indicar o andamento da inserção dos dados.
+Após a conclusão, você será solicitado a escolher o local e nome do novo arquivo Excel.
+Clique em "Salvar" para finalizar.
+O novo arquivo Excel com os dados extraídos será gerado e salvo no local que você escolher.
+
+Passo 6: Confirmar o Arquivo Gerado
+Quando o processo for concluído, uma mensagem de sucesso será exibida indicando que o arquivo foi salvo corretamente.
+Você pode agora abrir o arquivo Excel gerado e verificar se os dados foram inseridos corretamente no molde.
+
+Passo 7: Alternar entre Texto e Tabela
+Se você quiser ver os dados extraídos em um formato mais organizado antes de inseri-los no molde, clique no botão "Alternar para Visualizar Tabela".
+O texto extraído será formatado como uma tabela, com as colunas e linhas mais visíveis.
+Para voltar ao formato de texto normal, basta clicar novamente no botão.
+
+Passo 8: Extrair Novamente, se Necessário
+Caso queira fazer outra extração de dados com um novo PDF, clique no botão "Extrair Novamente?".
+Isso reiniciará o aplicativo e permitirá que você comece o processo desde o início.
+
+
+PARA MAIORES INFORMAÇÔES OU PROBLEMAS DE FUNCIONAMENTO MANDE UM EMAIL PARA:
+certificad02@intermetro.com.br
