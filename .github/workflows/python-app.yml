@@ -48,3 +48,8 @@ jobs:
       run: |
         pytest --maxfail=1 --disable-warnings --quiet  # Limita a falha a 1 e desabilita avisos
 
+    # Passo 6: Verificar se o Kivy está instalado corretamente (caso precise)
+    - name: Install Kivy dependencies (if needed)
+      run: |
+        pip install kivy==2.3.0 || echo "Kivy not required for this environment"
+
