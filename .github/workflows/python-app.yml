@@ -33,7 +33,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip  # Atualiza o pip para a versão mais recente
         pip install flake8 pytest pdfplumber openpyxl PyQt5  # Instala as dependências específicas do seu projeto
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi  # Instala dependências do requirements.txt, se existir
+        if [ -f requirements.txt ]; then pip install --no-deps -r requirements.txt; fi  # Instala dependências do requirements.txt, ignorando as dependências faltantes
 
     # Passo 4: Linting com flake8
     - name: Lint with flake8
@@ -47,9 +47,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest --maxfail=1 --disable-warnings --quiet  # Limita a falha a 1 e desabilita avisos
-
-    # Passo 6: Verificar se o Kivy está instalado corretamente (caso precise)
-    - name: Install Kivy dependencies (if needed)
-      run: |
-        pip install kivy==2.3.0 || echo "Kivy not required for this environment"
 
